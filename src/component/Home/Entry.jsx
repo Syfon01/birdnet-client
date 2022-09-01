@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-
 import PlaceholderImg from "../../img/placholder2.svg";
+
 const Entry = () => {
   return (
     <div className="bg-[#F9FAFB] round-top md:mt-10">

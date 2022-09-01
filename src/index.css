@@ -36,6 +36,9 @@ body{
   border-radius: 55% 95% 0 0 / 50px;
 
 }
+.round-bottomm{
+  border-radius: 50%;
+}
 .neg-margin{
   margin-top: -7rem;
 }
