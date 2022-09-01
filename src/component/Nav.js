@@ -45,7 +45,7 @@ const Nav = () => {
               <div className="md:flex hidden">
                 <Menu as="div" className="relative inline-block text-left">
                   <div>
-                    <Menu.Button className="inline-flex justify-center w-full rounded-md  link">
+                    <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  link">
                       Products
                       <ChevronDownIcon
                         className="-mr-1 ml-2 h-5 w-5"
