@@ -33,8 +33,12 @@ const Nav = () => {
 
   return (
     <>
-      <div className="py-5 bg-[#F9FAFB]">
-        <nav className="container">
+      <div
+        className="py-5 bg-[#F9FAFB] fixed w-full z-50 transition-all
+            duration-200
+            h-24"
+      >
+        <nav className="container ">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <div>
