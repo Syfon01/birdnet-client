@@ -15,7 +15,7 @@ const Intro = () => {
           bgKeyCard="bg-[#FEFAF5]"
           title="Send"
           text="Send and receive money across borders, as well as P2P transfers."
-          dataOs="fade-right"
+          dataOs="zoom-in-up"
         />
         <KeyBox
           img={spendImg}
@@ -36,7 +36,7 @@ const Intro = () => {
           bgKeyCard="bg-[#F4FBF7]"
           title="Invest"
           text="Set a monthly savings target and start investing."
-          dataOs="fade-left"
+          dataOs="zoom-in-down"
         />
       </div>
 

@@ -42,3 +42,29 @@ body{
 .neg-margin{
   margin-top: -7rem;
 }
+
+.wrapper{
+  @apply flex w-screen justify-center items-center
+}
+.accordion{
+  width:500px;
+}
+
+.item{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #EAECF0
+
+}
+.title{
+  @apply flex justify-between items-center 
+}
+.content{
+  overflow:hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+  max-height: 0;
+}
+.content.show{
+  height: auto;
+  max-height: 999px;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}

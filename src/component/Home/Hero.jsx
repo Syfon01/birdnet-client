@@ -11,6 +11,7 @@ const Hero = () => {
     AOS.init({
       duration: 2000,
     });
+    
     // AOS.refresh();
   }, []);
   return (

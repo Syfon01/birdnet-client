@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pb-10 pt-8">
+        <div className="pt-8">
           <div className="flex justify-between items-center flex-row">
             <div>
               <p className="text-[#98A2B3]">
