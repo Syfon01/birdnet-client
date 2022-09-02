@@ -48,7 +48,7 @@ const FAQ = () => {
   }
 
   return (
-    <div className="md:py-20 py-7">
+    <div className="md:py-20 py-16">
       <div className="container">
         <div className="lg:w-[60%] mx-auto ">
           <div className="text-center mb-7 md:mb-12">
@@ -86,7 +86,7 @@ const FAQ = () => {
           </div>
         </div>
 
-        <div className="bg-[#F9FAFB] p-10 rounded-[16px] mt-16 text-center">
+        <div className="bg-[#F9FAFB] p-10 rounded-[16px] md:mt-16 mt-10 text-center">
           <div className='mb-6 inline-block'>
             <img src={AvatarGroup} alt="" srcset="" />
           </div>

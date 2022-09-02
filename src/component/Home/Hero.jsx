@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <>
       <div className="bg-[#F9FAFB] round-bottom">
-        <div className="md:pt-12 py-6 md:pb-44  container">
+        <div className="md:pt-32 py-28 md:pb-44  container">
           <div className="flex lg:flex-row flex-col gap-8 justify-between items-center">
             <div className="lg:w-1/2 md:order-1 order-2">
               <div className="bg-[#EAF6EE] py-1 px-4 rounded-xl inline-block">
@@ -61,6 +61,7 @@ const Hero = () => {
                   srcSet=""
                   data-aos={"fade-left"}
                   data-aos-delay={50}
+
                 />
               </div>
             </div>
