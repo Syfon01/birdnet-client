@@ -14,15 +14,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-
-// const navigation = [
-//   { name: "Home", href: "/", current: true },
-//   { name: "About Us", href: "/about", current: false },
-//   { name: "Features", href: "/features", current: false },
-//   { name: "Contact", href: "/contact", current: false },
-// ];
-
-
 const Nav = () => {
 
    const [nav, setNav] = useState(false);
@@ -153,6 +144,9 @@ const Nav = () => {
                 </NavLink>
               </div>
 
+{/* =================================================
+mobile nav
+===============================================================  */}
               <div onClick={handleNav} className="block md:hidden">
                 {nav ? (
                   <AiOutlineClose size={20} />
@@ -165,17 +159,17 @@ const Nav = () => {
           <ul
             className={
               nav
-                ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-white-900 bg-white ease-in-out duration-500 z-50"
+                ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-white-900 bg-white ease-in-out duration-500 z-50 px-3"
                 : "ease-in-out duration-500 fixed left-[-100%]"
             }
           >
             <Link to="/">
-              <img src={logo} className="md:w-16 w-24 mt-4" alt="" />
+              <img src={logo} className="md:w-16 w-24 mt-4 mb-6" alt="" />
             </Link>
             <div className="">
               <Menu as="div" className="relative inline-block text-left">
                 <div>
-                  <Menu.Button className="block justify-center w-full rounded-md  link">
+                  <Menu.Button className="flex items-center justify-center  rounded-md mb-3  link">
                     Products
                     <ChevronDownIcon
                       className="-mr-1 ml-2 h-5 w-5"
@@ -247,7 +241,7 @@ const Nav = () => {
                     <NavLink
                       to="/blog"
                       className={classNames(
-                        isActive ? "link active" : "link block"
+                        isActive ? "link active" : "link block mb-3"
                       )}
                     >
                       Blog
@@ -259,7 +253,7 @@ const Nav = () => {
                     <NavLink
                       to="/contact"
                       className={classNames(
-                        isActive ? "link active" : "link block"
+                        isActive ? "link active" : "link block mb-8"
                       )}
                     >
                       Contact Us
@@ -270,7 +264,7 @@ const Nav = () => {
 
               <NavLink
                 to="/login"
-                className="text-white border border-transparent rounded-full block text-center lg:w-40 py-2 bg-primary500 hover:bg-green-700"
+                className="text-white border border-transparent rounded-full block text-center py-2 bg-primary500 hover:bg-green-700"
               >
                 Get started today
               </NavLink>
