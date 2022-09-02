@@ -25,7 +25,7 @@ const Hero = () => {
                   Send, Spend, Save & Invest
                 </p>
               </div>
-              <h1 className="md:text-6xl text-4xl font-[900] leading-tight">
+              <h1 className="md:text-6xl text-3xl font-[900] leading-tight">
                 Banking & Transfers at your{" "}
                 <Typed
                   strings={["Fingertips"]}
