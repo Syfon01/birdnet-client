@@ -7,7 +7,7 @@ import facebook from "../img/facebook.svg";
 import linkendin from "../img/linkedin.svg";
 const Footer = () => {
   return (
-    <div className="bg-[#1D2939] py-8 md:py-20 text-white">
+    <div className="bg-[#1D2939] py-12 md:pt-16 text-white">
       <div className="container">
         <div className="border-b border-[#475467] md:pb-10 pb-5">
           <div className="flex justify-between items-center flex-wrap flex-col md:flex-row">

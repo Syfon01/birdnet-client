@@ -43,19 +43,21 @@ body{
   margin-top: -7rem;
 }
 
-.wrapper{
-  @apply flex w-screen justify-center items-center
-}
+
 .accordion{
-  width:500px;
+  /* width:500px; */
 }
 
-.item{
+.acc-item{
   margin-bottom: 10px;
   border-bottom: 1px solid #EAECF0
 
 }
-.title{
+
+.image-shrink{
+  flex-shrink: 0;
+}
+.acc-title{
   @apply flex justify-between items-center 
 }
 .content{
