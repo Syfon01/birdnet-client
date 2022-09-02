@@ -98,7 +98,7 @@ const FAQ = () => {
           <div className="mt-6">
             <Link
               to="/"
-              className="text-white font-medium border border-transparent rounded-full text-center inline-block lg:w-36 py-2 bg-primary500 hover:bg-green-700"
+              className="text-white font-medium border border-transparent rounded-full text-center inline-block px-4 lg:w-36 py-2 bg-primary500 hover:bg-green-700"
             >
               Get in touch
             </Link>
