@@ -114,8 +114,8 @@ const FAQ = () => {
           <div className="inline-block mb-6">
             <img src={AvatarGroup} alt="" srcset="" />
           </div>
-          <h3 className="mb-2 text-2xl font-bold">Still have questions?</h3>
-          <p className="text-lg text-[#4A5C6B]">
+          <h3 className="mb-2 text-2xl font-bold md:text-3xl">Still have questions?</h3>
+          <p className="text-lg md:text-xl text-[#4A5C6B]">
             Can’t find the answer you’re looking for? Please chat to our
             friendly team.
           </p>
