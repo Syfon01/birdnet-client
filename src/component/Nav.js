@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import MobileNav from "./Navigation/MobileNav";
+// import MobileNav from "./Navigation/MobileNav";
 
 
 import logo from "../img/Logo.svg";
@@ -63,7 +63,7 @@ const Nav = () => {
                         <Menu.Item>
                           {({ isActive }) => (
                             <NavLink
-                              to="/loans"
+                              to="/"
                               className={classNames(
                                 isActive
                                   ? "link active"
@@ -77,7 +77,7 @@ const Nav = () => {
                         <Menu.Item>
                           {({ isActive }) => (
                             <NavLink
-                              to="/transfer"
+                              to="/"
                               className={classNames(
                                 isActive
                                   ? "link active"
@@ -91,14 +91,14 @@ const Nav = () => {
                         <Menu.Item>
                           {({ isActive }) => (
                             <NavLink
-                              to="/savings"
+                              to="/"
                               className={classNames(
                                 isActive
                                   ? "link active"
                                   : "link block my-1 py-2 hover:bg-gray-50"
                               )}
                             >
-                              Savings
+                              Savings 
                             </NavLink>
                           )}
                         </Menu.Item>
@@ -110,7 +110,7 @@ const Nav = () => {
                   <Menu.Item>
                     {({ isActive }) => (
                       <NavLink
-                        to="/blog"
+                        to="/"
                         className={classNames(
                           isActive ? "link active" : "link"
                         )}
@@ -122,7 +122,7 @@ const Nav = () => {
                   <Menu.Item>
                     {({ isActive }) => (
                       <NavLink
-                        to="/contact"
+                        to="/"
                         className={classNames(
                           isActive ? "link active" : "link"
                         )}
@@ -137,7 +137,7 @@ const Nav = () => {
             <div>
               <div className="md:flex hidden">
                 <NavLink
-                  to="/login"
+                  to="/"
                   className="text-white border border-transparent rounded-full block text-center lg:w-40 py-2 bg-primary500 hover:bg-green-700"
                 >
                   Get started today
@@ -192,7 +192,7 @@ mobile nav
                       <Menu.Item>
                         {({ isActive }) => (
                           <NavLink
-                            to="/loans"
+                            to="/"
                             className={classNames(
                               isActive
                                 ? "link active"
@@ -206,7 +206,7 @@ mobile nav
                       <Menu.Item>
                         {({ isActive }) => (
                           <NavLink
-                            to="/transfer"
+                            to="/"
                             className={classNames(
                               isActive
                                 ? "link active"
@@ -220,7 +220,7 @@ mobile nav
                       <Menu.Item>
                         {({ isActive }) => (
                           <NavLink
-                            to="/savings"
+                            to="/"
                             className={classNames(
                               isActive
                                 ? "link active"
@@ -239,7 +239,7 @@ mobile nav
                 <Menu.Item>
                   {({ isActive }) => (
                     <NavLink
-                      to="/blog"
+                      to="/"
                       className={classNames(
                         isActive ? "link active" : "link block mb-3"
                       )}
@@ -251,7 +251,7 @@ mobile nav
                 <Menu.Item>
                   {({ isActive }) => (
                     <NavLink
-                      to="/contact"
+                      to="/"
                       className={classNames(
                         isActive ? "link active" : "link block mb-8"
                       )}
@@ -263,7 +263,7 @@ mobile nav
               </Menu>
 
               <NavLink
-                to="/login"
+                to="/"
                 className="text-white border border-transparent rounded-full block text-center py-2 bg-primary500 hover:bg-green-700"
               >
                 Get started today

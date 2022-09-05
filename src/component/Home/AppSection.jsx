@@ -16,7 +16,7 @@ const AppSection = () => {
               </h2>
               <div className="lg:w-[90%]">
                 <p className="my-8 text-lg text-[#4A5C6B]">
-                  Managing multiple accounts from a single app, saves you the
+                  Managing multiple accounts from a single app, saves you the 
                   trouble of carrying multiple cards, as well as the time and
                   stress of navigating multiple mobile apps to complete any
                   transaction.

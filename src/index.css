@@ -24,7 +24,7 @@ html,body{
 }
 
 .active{
-  @apply text-primary font-semibold border-b-2 border-b-primary pb-3
+  /* @apply text-primary font-semibold border-b-2 border-b-primary pb-3 */
 }
 .btn.active{
   @apply text-white

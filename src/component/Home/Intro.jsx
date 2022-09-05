@@ -16,7 +16,7 @@ const Intro = () => {
           title="Send"
           text="Send and receive money across borders, as well as P2P transfers."
           dataOs="zoom-in-up"
-        />
+        /> 
         <KeyBox
           img={spendImg}
           bgKeyCard="bg-[#F7FBFF]"
@@ -60,7 +60,7 @@ const Intro = () => {
               </p>
 
               <Link
-                to="/login"
+                to="/"
                 className="text-white font-medium border border-transparent rounded-full block text-center lg:w-40 py-2 bg-primary500 hover:bg-green-700"
               >
                 Know More
