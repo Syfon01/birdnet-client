@@ -8,14 +8,14 @@ const AppSection = () => {
   return (
     <div className="bg-[#F9FAFB]">
       <div className="bg-white round-bottom">
-        <div className="container py-5 md:pt-20 md:pb-32">
-          <div className="flex lg:flex-row flex-col gap-8 justify-between items-center">
-            <div className="lg:w-1/2 md:order-1 order-2">
-              <h2 className="md:text-4xl text-3xl font-bold lg:w-[70%]">
+        <div className="container py-5 md:pt-20 md:pb-24">
+          <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
+            <div className="order-2 lg:w-1/2 md:order-1">
+              <h2 className="md:text-5xl text-3xl font-bold lg:w-[70%]">
                 One app for all accounts
               </h2>
               <div className="lg:w-[90%]">
-                <p className="my-8 text-lg text-[#4A5C6B]">
+                <p className="my-8 text-lg md:text-2xl text-[#4A5C6B]">
                   Managing multiple accounts from a single app, saves you the 
                   trouble of carrying multiple cards, as well as the time and
                   stress of navigating multiple mobile apps to complete any
@@ -33,7 +33,7 @@ const AppSection = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 md:order-2 order-1">
+            <div className="order-1 lg:w-1/2 md:order-2">
               <div className="xl:ml-20">
                 <img
                   src={PlaceholderImg}

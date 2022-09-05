@@ -29,6 +29,16 @@ html,body{
 .btn.active{
   @apply text-white
 }
+.navbar{
+  @apply py-2 bg-[#F9FAFB] fixed w-full z-50 transition-all duration-200 
+}
+.navbar-change{
+      transition: all .4s ease-in-out!important;
+      background-color: white!important;
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid hsla(0,0%,100%,.1);
+      @apply shadow-lg py-1
+}
 .key-shadow{
   box-shadow: 0px 6px 30px 0px #00000014;
 }

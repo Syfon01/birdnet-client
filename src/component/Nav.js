@@ -22,28 +22,37 @@ const Nav = () => {
      setNav(!nav);
    };
 
+   const [colorChange, setColorchange] = useState(false);
+   const changeNavbarColor = () => {
+     if (window.scrollY >= 80) {
+       setColorchange(true);
+     } else {
+       setColorchange(false);
+     }
+   };
+   window.addEventListener("scroll", changeNavbarColor);
+
   return (
     <>
       <div
-        className="py-5 bg-[#F9FAFB] fixed w-full z-50 transition-all
-            duration-200
-            h-24"
+        className={colorChange ? 'navbar navbar-change' : 'navbar'}
+
       >
         <nav className="container ">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <div>
                 <Link to="/">
-                  <img src={logo} className="md:w-16 w-24" alt="" />
+                  <img src={logo} className="w-24 md:w-32" alt="" />
                 </Link>
               </div>
-              <div className="md:flex hidden">
+              <div className="hidden md:flex">
                 <Menu as="div" className="relative inline-block text-left">
                   <div>
-                    <Menu.Button className="inline-flex justify-center items-center w-full rounded-md  link">
+                    <Menu.Button className="inline-flex items-center justify-center w-full rounded-md link">
                       Products
                       <ChevronDownIcon
-                        className="-mr-1 ml-2 h-5 w-5"
+                        className="w-5 h-5 ml-2 -mr-1"
                         aria-hidden="true"
                       />
                     </Menu.Button>
@@ -58,7 +67,7 @@ const Nav = () => {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Items className="absolute right-0 mt-2 origin-top-right bg-white rounded-md shadow-lg w-36 ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <div className="py-1">
                         <Menu.Item>
                           {({ isActive }) => (
@@ -135,10 +144,10 @@ const Nav = () => {
               </div>
             </div>
             <div>
-              <div className="md:flex hidden">
+              <div className="hidden md:flex">
                 <NavLink
                   to="/"
-                  className="text-white border border-transparent rounded-full block text-center lg:w-40 py-2 bg-primary500 hover:bg-green-700"
+                  className="block py-2 text-center text-white border border-transparent rounded-full lg:w-40 bg-primary500 hover:bg-green-700"
                 >
                   Get started today
                 </NavLink>
@@ -164,15 +173,15 @@ mobile nav
             }
           >
             <Link to="/">
-              <img src={logo} className="md:w-16 w-24 mt-4 mb-6" alt="" />
+              <img src={logo} className="w-24 mt-4 mb-6 md:w-16" alt="" />
             </Link>
             <div className="">
               <Menu as="div" className="relative inline-block text-left">
                 <div>
-                  <Menu.Button className="flex items-center justify-center  rounded-md mb-3  link">
+                  <Menu.Button className="flex items-center justify-center mb-3 rounded-md link">
                     Products
                     <ChevronDownIcon
-                      className="-mr-1 ml-2 h-5 w-5"
+                      className="w-5 h-5 ml-2 -mr-1"
                       aria-hidden="true"
                     />
                   </Menu.Button>
@@ -187,7 +196,7 @@ mobile nav
                   leaveFrom="transform opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
-                  <Menu.Items className="origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Items className="absolute right-0 mt-2 origin-top-right bg-white rounded-md shadow-lg w-36 ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
                       <Menu.Item>
                         {({ isActive }) => (
@@ -264,7 +273,7 @@ mobile nav
 
               <NavLink
                 to="/"
-                className="text-white border border-transparent rounded-full block text-center py-2 bg-primary500 hover:bg-green-700"
+                className="block py-2 text-center text-white border border-transparent rounded-full bg-primary500 hover:bg-green-700"
               >
                 Get started today
               </NavLink>

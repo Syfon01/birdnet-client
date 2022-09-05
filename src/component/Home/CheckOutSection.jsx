@@ -6,8 +6,8 @@ import iosIcon from "../../img/iosDark.png";
 const CheckOutSection = () => {
   return (
     <div className="bg-[#F9FAFB]">
-      <div className="container py-5 md:py-20">
-        <div className="flex lg:flex-row flex-col gap-8 justify-between items-center">
+      <div className="container py-5 md:py-12">
+        <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
           <div className="lg:w-1/2">
             <div className="xl:ml-20">
               <img
@@ -21,11 +21,11 @@ const CheckOutSection = () => {
           </div>
 
           <div className="lg:w-1/2">
-            <h2 className="md:text-4xl text-3xl font-bold lg:w-[70%]">
+            <h2 className="md:text-5xl text-3xl font-bold lg:w-[90%]">
               Checkout with BirdNet
             </h2>
-            <div className="lg:w-[65%]">
-              <p className="my-8 text-lg text-[#4A5C6B]">
+            <div className="lg:w-[85%]">
+              <p className="my-8 md:text-2xl text-lg text-[#4A5C6B]">
                 You can integrate the BirdNet fast checkout controls into your
                 website or app. It accepts local and international payments for
                 businesses of all sizes.

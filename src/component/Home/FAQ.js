@@ -72,24 +72,24 @@ const FAQ = () => {
   }
 
   return (
-    <div className="md:py-20 py-16">
+    <div className="py-16 md:py-20">
       <div className="container">
         <div className="lg:w-[60%] mx-auto ">
           <div className="text-center mb-7 md:mb-12">
-            <h2 className="font-bold md:text-4xl text-3xl mb-3">
+            <h2 className="mb-3 text-3xl font-bold md:text-5xl">
               Frequently asked questions
             </h2>
-            <h5 className="text-xl text-[#4A5C6B]">
+            <h5 className="text-xl md:text-2xl text-[#4A5C6B]">
               Everything you need to know about the product
             </h5>
           </div>
 
           <div className="accordion ">
             {data.map((item, i) => (
-              <div className="acc-item py-2">
-                <div className="acc-title pt-2 pb-4" onClick={() => toggle(i)}>
+              <div className="py-2 acc-item">
+                <div className="pt-2 pb-4 acc-title" onClick={() => toggle(i)}>
                   <div>
-                    <h2 className="font-medium text-xl text-[#101828]">
+                    <h2 className="font-medium text-xl md:text-2xl text-[#101828]">
                       {item.question}
                     </h2>
                   </div>
@@ -103,7 +103,7 @@ const FAQ = () => {
                   </div>
                 </div>
                 <div className={selected === i ? "content show" : "content"}>
-                  <div className="py-2 text-[#4A5C6B]">{item.answer}</div>
+                  <div className="py-2 text-[#4A5C6B] md:text-lg">{item.answer}</div>
                 </div>
               </div>
             ))}
@@ -111,10 +111,10 @@ const FAQ = () => {
         </div>
 
         <div className="bg-[#F9FAFB] p-10 rounded-[16px] md:mt-16 mt-10 text-center">
-          <div className="mb-6 inline-block">
+          <div className="inline-block mb-6">
             <img src={AvatarGroup} alt="" srcset="" />
           </div>
-          <h3 className="text-2xl font-bold mb-2">Still have questions?</h3>
+          <h3 className="mb-2 text-2xl font-bold">Still have questions?</h3>
           <p className="text-lg text-[#4A5C6B]">
             Can’t find the answer you’re looking for? Please chat to our
             friendly team.
@@ -124,7 +124,7 @@ const FAQ = () => {
               href="mailto:help@birdnet.io"
               target="_blank"
               rel='noreferrer'
-              className="text-white font-medium border border-transparent rounded-full text-center inline-block px-4 lg:w-36 py-2 bg-primary500 hover:bg-green-700"
+              className="inline-block px-4 py-2 font-medium text-center text-white border border-transparent rounded-full lg:w-36 bg-primary500 hover:bg-green-700"
             >
               Get in touch
             </a>
