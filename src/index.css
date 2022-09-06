@@ -23,6 +23,11 @@ html,body{
   @apply text-slate-500 px-2 mx-4
 }
 
+.link-dropdown{
+  @apply text-slate-500 px-5
+
+}
+
 .active{
   /* @apply text-primary font-semibold border-b-2 border-b-primary pb-3 */
 }
@@ -56,11 +61,6 @@ html,body{
   margin-top: -7rem;
 }
 
-
-.accordion{
-  /* width:500px; */
-}
-
 .acc-item{
   margin-bottom: 10px;
   border-bottom: 1px solid #EAECF0
@@ -70,9 +70,7 @@ html,body{
 .image-shrink{
   flex-shrink: 0;
 }
-.acc-title{
-  @apply flex justify-between items-center 
-}
+
 .content{
   overflow:hidden;
   transition: all 0.5s cubic-bezier(0,1,0,1);

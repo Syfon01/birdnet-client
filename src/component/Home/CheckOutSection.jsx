@@ -24,7 +24,7 @@ const CheckOutSection = () => {
             <h2 className="md:text-5xl text-3xl font-bold lg:w-[90%]">
               Checkout with BirdNet
             </h2>
-            <div className="lg:w-[85%]">
+            <div className="lg:w-[95%]">
               <p className="my-8 md:text-2xl text-lg text-[#4A5C6B]">
                 You can integrate the BirdNet fast checkout controls into your
                 website or app. It accepts local and international payments for

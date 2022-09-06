@@ -87,7 +87,10 @@ const FAQ = () => {
           <div className="accordion ">
             {data.map((item, i) => (
               <div className="py-2 acc-item">
-                <div className="pt-2 pb-4 acc-title" onClick={() => toggle(i)}>
+                <div
+                  className="pt-2 pb-4 flex justify-between"
+                  onClick={() => toggle(i)}
+                >
                   <div>
                     <h2 className="font-medium text-xl md:text-2xl text-[#101828]">
                       {item.question}
@@ -96,14 +99,16 @@ const FAQ = () => {
 
                   <div className="image-shrink">
                     <img
-                      className="w-full"
+                      className="ml-2 w-full"
                       src={selected === i ? Minusicon : Plusicon}
                       alt="acordion"
                     />
                   </div>
                 </div>
                 <div className={selected === i ? "content show" : "content"}>
-                  <div className="py-2 text-[#4A5C6B] md:text-lg">{item.answer}</div>
+                  <div className="py-2 text-[#4A5C6B] md:text-lg">
+                    {item.answer}
+                  </div>
                 </div>
               </div>
             ))}
@@ -114,7 +119,9 @@ const FAQ = () => {
           <div className="inline-block mb-6">
             <img src={AvatarGroup} alt="" srcset="" />
           </div>
-          <h3 className="mb-2 text-2xl font-bold md:text-3xl">Still have questions?</h3>
+          <h3 className="mb-2 text-2xl font-bold md:text-3xl">
+            Still have questions?
+          </h3>
           <p className="text-lg md:text-xl text-[#4A5C6B]">
             Can’t find the answer you’re looking for? Please chat to our
             friendly team.
@@ -123,7 +130,7 @@ const FAQ = () => {
             <a
               href="mailto:help@birdnet.io"
               target="_blank"
-              rel='noreferrer'
+              rel="noreferrer"
               className="inline-block px-4 py-2 font-medium text-center text-white border border-transparent rounded-full lg:w-36 bg-primary500 hover:bg-green-700"
             >
               Get in touch

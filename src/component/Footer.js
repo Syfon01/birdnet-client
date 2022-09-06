@@ -88,13 +88,27 @@ const Footer = () => {
             </div>
             <div>
               <div className="flex">
-                <a href="">
+                <a
+                  href="https://twitter.com/ObirdApp"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <img src={twitter} alt="twitter" srcSet="" />
                 </a>
-                <a href="" className="ml-6">
+                <a
+                  href="https://www.linkedin.com/company/bird-venture-financial-tecnologies-inc/"
+                  className="ml-6"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <img src={linkendin} alt="linkedin" srcSet="" />
                 </a>
-                <a href="" className="ml-6">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100084447096115"
+                  className="ml-6"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <img src={facebook} alt="facebook" srcSet="" />
                 </a>
               </div>

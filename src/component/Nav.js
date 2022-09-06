@@ -23,6 +23,7 @@ const Nav = () => {
    };
 
    const [colorChange, setColorchange] = useState(false);
+
    const changeNavbarColor = () => {
      if (window.scrollY >= 80) {
        setColorchange(true);
@@ -34,10 +35,7 @@ const Nav = () => {
 
   return (
     <>
-      <div
-        className={colorChange ? 'navbar navbar-change' : 'navbar'}
-
-      >
+      <div className={colorChange ? "navbar navbar-change" : "navbar"}>
         <nav className="container ">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
@@ -75,8 +73,8 @@ const Nav = () => {
                               to="/"
                               className={classNames(
                                 isActive
-                                  ? "link active"
-                                  : "link block my-1 py-2 hover:bg-gray-50"
+                                  ? "link-dropdown active"
+                                  : "link-dropdown block my-1 mx-0 py-2 hover:bg-gray-50"
                               )}
                             >
                               Loan
@@ -89,8 +87,8 @@ const Nav = () => {
                               to="/"
                               className={classNames(
                                 isActive
-                                  ? "link active"
-                                  : "link block my-1 py-2 hover:bg-gray-50"
+                                  ? "link-dropdown active"
+                                  : "link-dropdown block my-1 py-2 hover:bg-gray-50"
                               )}
                             >
                               Transfers
@@ -103,11 +101,11 @@ const Nav = () => {
                               to="/"
                               className={classNames(
                                 isActive
-                                  ? "link active"
-                                  : "link block my-1 py-2 hover:bg-gray-50"
+                                  ? "link-dropdown active"
+                                  : "link-dropdown block my-1 py-2 hover:bg-gray-50"
                               )}
                             >
-                              Savings 
+                              Savings
                             </NavLink>
                           )}
                         </Menu.Item>
@@ -153,7 +151,7 @@ const Nav = () => {
                 </NavLink>
               </div>
 
-{/* =================================================
+              {/* =================================================
 mobile nav
 ===============================================================  */}
               <div onClick={handleNav} className="block md:hidden">
