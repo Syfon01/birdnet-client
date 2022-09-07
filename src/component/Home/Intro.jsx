@@ -42,7 +42,7 @@ const Intro = () => {
 
       <div className="py-5 md:py-16">
         <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
-          <div className="order-2 lg:w-[60%] md:order-1">
+          <div className="order-2 lg:w-[70%] md:order-1">
             <h2 className="md:text-5xl text-3xl font-bold lg:w-[80%]">
               Experience US banking at its finest
             </h2>

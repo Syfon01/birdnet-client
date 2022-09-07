@@ -1,5 +1,5 @@
 import React from 'react'
-import PlaceholderImg from "../../img/placeholder.svg";
+import PlaceholderImg from "../../img/account.svg";
 import androidIcon from "../../img/andriodDark.png";
 import iosIcon from "../../img/iosDark.png";
 
