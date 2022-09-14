@@ -65,48 +65,48 @@ const Nav = () => {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="absolute right-0 mt-2 origin-top-right bg-white rounded-md shadow-lg w-36 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Items className="absolute right-0 mt-2 origin-top-right bg-white rounded-md shadow-lg w-56 ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <div className="py-1">
                         <Menu.Item>
                           {({ isActive }) => (
-                            <NavLink
-                              to="/"
+                            <a
+                              href="#us-banking"
                               className={classNames(
                                 isActive
                                   ? "link-dropdown active"
                                   : "link-dropdown block my-1 mx-0 py-2 hover:bg-gray-50"
                               )}
                             >
-                              Loan
-                            </NavLink>
+                              US Banking
+                            </a>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ isActive }) => (
-                            <NavLink
-                              to="/"
+                            <a
+                              href="#all-border"
                               className={classNames(
                                 isActive
                                   ? "link-dropdown active"
                                   : "link-dropdown block my-1 py-2 hover:bg-gray-50"
                               )}
                             >
-                              Transfers
-                            </NavLink>
+                              Cross border and Local Transfer
+                            </a>
                           )}
                         </Menu.Item>
                         <Menu.Item>
                           {({ isActive }) => (
-                            <NavLink
-                              to="/"
+                            <a
+                              href="#multiple-account"
                               className={classNames(
                                 isActive
                                   ? "link-dropdown active"
                                   : "link-dropdown block my-1 py-2 hover:bg-gray-50"
                               )}
                             >
-                              Savings
-                            </NavLink>
+                              Account Consolidation
+                            </a>
                           )}
                         </Menu.Item>
                       </div>
@@ -166,7 +166,7 @@ mobile nav
           <ul
             className={
               nav
-                ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-white-900 bg-white ease-in-out duration-500 z-50 px-3"
+                ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-white-900 bg-white ease-in-out duration-500 z-75 px-3"
                 : "ease-in-out duration-500 fixed left-[-100%]"
             }
           >
@@ -194,50 +194,51 @@ mobile nav
                   leaveFrom="transform opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
-                  <Menu.Items className="absolute right-0 mt-2 origin-top-right bg-white rounded-md shadow-lg w-36 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Items className="absolute mt-2 origin-top-right bg-white rounded-md shadow-lg w-56 ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="py-1">
                       <Menu.Item>
                         {({ isActive }) => (
-                          <NavLink
-                            to="/"
+                          <a
+                            href="#us-banking"
                             className={classNames(
                               isActive
                                 ? "link active"
-                                : "link block my-1 py-2 hover:bg-gray-50"
+                                : "link block my-1 mx-0 py-2 hover:bg-gray-50"
                             )}
                           >
-                            Loan
-                          </NavLink>
+                            US Banking
+                          </a>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ isActive }) => (
-                          <NavLink
-                            to="/"
+                          <a
+                            href="#all-border"
                             className={classNames(
                               isActive
                                 ? "link active"
                                 : "link block my-1 py-2 hover:bg-gray-50"
                             )}
                           >
-                            Transfers
-                          </NavLink>
+                            Cross border and Local Transfer
+                          </a>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ isActive }) => (
-                          <NavLink
-                            to="/"
+                          <a
+                            href="#multiple-account"
                             className={classNames(
                               isActive
                                 ? "link active"
                                 : "link block my-1 py-2 hover:bg-gray-50"
                             )}
                           >
-                            Savings
-                          </NavLink>
+                            Account Consolidation
+                          </a>
                         )}
                       </Menu.Item>
+                      
                     </div>
                   </Menu.Items>
                 </Transition>

@@ -6,7 +6,7 @@ import iosIcon from "../../img/iosDark.png";
 
 const AppSection = () => {
   return (
-    <div className="bg-[#F9FAFB]">
+    <div className="bg-[#F9FAFB]" id='multiple-account'>
       <div className="bg-white round-bottom">
         <div className="container py-5 md:pt-20 md:pb-24">
           <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">

@@ -1,11 +1,11 @@
 import React from 'react'
-import PlaceholderImg from "../../img/placholder2.svg";
+import PlaceholderImg from "../../img/checkout.svg";
 import androidIcon from "../../img/andriodDark.png";
 import iosIcon from "../../img/iosDark.png";
 
 const CheckOutSection = () => {
   return (
-    <div className="bg-[#F9FAFB]">
+    <div className="bg-[#F9FAFB]" id="checkout">
       <div className="container py-5 md:py-12">
         <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
           <div className="lg:w-1/2">

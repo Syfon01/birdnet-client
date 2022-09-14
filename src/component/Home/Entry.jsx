@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import PlaceholderImg from "../../img/entry.svg";
 
 const Entry = () => {
   return (
-    <div className="bg-[#F9FAFB] round-top md:mt-10">
+    <div className="bg-[#F9FAFB] round-top md:mt-10" id='all-border'>
       <div className="container py-5 md:py-16">
         <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
           <div className="lg:w-[45%]">
@@ -33,12 +33,12 @@ const Entry = () => {
                 on the emerging market.
               </p>
  
-              <Link
+              {/* <Link
                 to="/"
                 className="block py-2 font-medium text-center text-white border border-transparent rounded-full lg:w-40 bg-primary500 hover:bg-green-700"
               >
                 Know More
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

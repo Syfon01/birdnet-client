@@ -5,10 +5,10 @@ import sendImg from '../../img/send.svg'
 import spendImg from "../../img/spend.svg";
 import saveImg from "../../img/save.svg";
 import investImg from "../../img/invest.svg";
-import PlaceholderImg from "../../img/placeholder.svg"
+import PlaceholderImg from "../../img/experience.svg"
 const Intro = () => {
   return (
-    <div className="container neg-margin">
+    <div className="container neg-margin" id='us-banking'>
       <div className="grid gap-8 my-10 lg:grid-cols-4 md:grid-cols-2">
         <KeyBox
           img={sendImg}
@@ -59,12 +59,12 @@ const Intro = () => {
                 the full faith and credit of the United States Government
               </p>
 
-              <Link
+              {/* <Link
                 to="/"
                 className="block py-2 font-medium text-center text-white border border-transparent rounded-full lg:w-40 bg-primary500 hover:bg-green-700"
               >
                 Know More
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="order-1 lg:w-1/2 md:order-2">
